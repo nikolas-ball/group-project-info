@@ -1,6 +1,6 @@
 /* Nikolas Ball */
-/* CSCI1145 Project 2 */
-/* Feb 20th 2020 */
+/* CSCI1145*/
+/* March 24th 2020 */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -92,6 +92,12 @@ body {
   flex: 25%;
   padding: 5px;
 }
+/*removal of inline styles for certain images*/
+.column img {
+  width: 100%;
+  height: 275px;
+}
+
 .row2 {
   display: flex;
   margin: 5px;
@@ -102,6 +108,11 @@ body {
   flex: 25%;
   border: 2px solid black;
   margin: 5px;
+}
+/*removal of inline styles for certain images*/
+.row2 .column2 img {
+  width: 100%;
+  height: 275px;
 }
 
 .home {
@@ -166,7 +177,7 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #00acee;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -194,6 +205,10 @@ input[type=submit] {
   float: left;
   width: 75%;
   margin-top: 6px;
+}
+
+.col-75 textarea {
+  height: 175px;
 }
 
 /* Clear floats after the columns */
