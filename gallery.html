@@ -9,56 +9,72 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <!-- Nikolas Ball -->
 <!-- CSCI 1145 -->
-<!-- March 24th 2020 -->
+<!-- April 9th 2020 -->
 </head>
 <body>
-<div class="w3-bar navbar">
-        <a class="w3-bar-item w3-button" href="index.html">Home</a>
-        <a class="w3-bar-item w3-button" href="contact.html">Contact</a>
-        <a class="w3-bar-item w3-button" href="why.html">Why We Made This</a>
-        <a class="w3-bar-item w3-button" href="how.html">How We Made This</a>
-        <a class="w3-bar-item w3-button" href="gallery.html">Gallery</a>
+  <div class="w3-bar w3-black">
+    <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
+    <a class="w3-bar-item w3-button w3-mobile" href="contact.html">Contact</a>
+    <a class="w3-bar-item w3-button w3-mobile" href="why.html">Why We Made This</a>
+    <a class="w3-bar-item w3-button w3-mobile" href="how.html">How We Made This</a>
+    <a class="w3-bar-item w3-button w3-mobile" href="gallery.html">Gallery</a>
 </div>
-<div id="home" class="header2">
-  <div class="w3-container">
+<div id="home" class="header2 w3-mobile">
+  <div class="w3-container w3-center w3-mobile">
   <img src="images/TCAISlong.png" class="w3-image" alt="Alternate Logo (Words)" title="Alt Logo, This one is longer">
 </div>
  </div>
- <div class="w3-container">
-  <div id="gallery" class="gallery">
     <br />
+    <div class="w3-container">
+      <div id="galleryy" class="galleryy w3-mobile">
     <h1>Photo Gallery</h1>
-    <h5>Please enjoy these screengrabs taken from inside the Twitter Clone App. To view the bigger image, right click and select "open in new tab".</h5>
-    <div class="row2">
-      <div class="column2">
+    <h5>Please enjoy these screengrabs taken from inside the Twitter Clone App. To view the bigger image, right click or long-tap and select the option "open image in new tab".</h5>
+    </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
         <img src="images/TCAhome.png" alt="App Home Page" title="App Home Page">
       </div>
-      <div class="column2">
+    </div>
+    <div class="responsive">
+      <div class="gallery">
         <img src="images/TCAnewpost.png" alt="New Post in App" title="New Post Route In App">
       </div>
-      <div class="column2">
+    </div>
+    <div class="responsive">
+      <div class="gallery">
         <img src="images/TCApost.png" alt="Post in App" title="View Post Route In App">
     </div>
-        <div class="column2">
+    </div>
+    <div class="responsive">
+        <div class="gallery">
             <img src="images/TCAedit.png" alt="Edit Post in App" title="Edit Post Route In App">
       </div>
-    </div>
-    <div class="row2">
-      <div class="column2">
+      </div>
+    <div class="responsive">
+      <div class="gallery">
         <img src="images/TCADB.png" alt="Database for App" title="Database service for app">
       </div>
-      <div class="column2">
+    </div>
+    <div class="responsive">
+      <div class="gallery">
         <img src="images/TCAdeploy.png" alt="Deployment of App" title="Deployment service for app">
       </div>
-      <div class="column2">
+    </div>
+    <div class="responsive">
+      <div class="gallery">
         <img src="images/TCAcode.png" alt="Sample of backend code for App" title="App.js code in IDE">
     </div>
-        <div class="column2">
+    </div>
+    <div class="responsive">
+        <div class="gallery">
             <img src="images/TCAgithub.png" alt="Github repo for App" title="Github repo">
       </div>
-    </div>
-    <h2>About These Images</h2>
-    <p>
+      </div>
+      <div class="w3-container">
+      <div id="galleryy" class="galleryy w3-mobile">
+        <h2>About These Images</h2>
+        <p class="desc">
         <strong>These images display different features and functionalities of the Twitter Clone Application.</strong><br /><br />
         A typical user-flow of the web app is that first, the user is presented with a home page, that takes the appearance of a scrolling feed. From that screen, a user can click a post and view the full post, as well as click the new post button in the navigation bar. Check out this <a href="https://www.youtube.com">Youtube video</a>  to watch a walk-through of the app, or check out the <a href="https://github.com/nick-ball/group-project">Github repository</a> to view the code behind the application.
     </p>
