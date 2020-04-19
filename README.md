@@ -1,6 +1,6 @@
 # [group-project-info](https://nickballdev.com/group-project-info/)
-
-A responsive, informational website about the CSCC Group Project Twitter Clone App
+ 
+A responsive, informational website about the CSCC ITFA Twitter Clone App Group Project, which was led by me. 
 
 
 #### A website, about a website?! What is this madness!
