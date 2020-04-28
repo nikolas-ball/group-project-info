@@ -7,11 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
 <!-- Nikolas Ball -->
 <!-- CSCI 1145 -->
-<!-- April 9th 2020 -->
-</head>
-<body>     
+<!-- April 27th 2020 -->     
 <div class="w3-bar w3-black">
         <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
         <a class="w3-bar-item w3-button w3-mobile" href="contact.html">Contact</a>
@@ -19,10 +20,36 @@
         <a class="w3-bar-item w3-button w3-mobile" href="how.html">How We Made This</a>
         <a class="w3-bar-item w3-button w3-mobile" href="gallery.html">Gallery</a>
 </div>
-	
+
+<div id="canvas-wrapper" class="light-mode">
 <div id="home" class="header w3-mobile">
   <div class="w3-content w3-center w3-mobile" style="max-width:500px">
   <h1><strong>The Twitter Clone App Informational Site</strong></h1>
+  <p>Toggle Light/Dark Mode</p>
+  <script>
+  $(document).ready(function(){
+  $('#myonoffswitch').change(function () {
+    $('#canvas-wrapper').first().toggleClass('dark-mode').toggleClass('light-mode');
+  });
+});
+</script> 
+<!-- jQuery code allows for a user to click a button to switch from light to dark mode -->
+  <div class="onoffswitch">
+    <div class="superImportant do-not-ignore">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+    <label class="onoffswitch-label" for="myonoffswitch"> <span class="onoffswitch-inner"></span>
+ <span class="onoffswitch-switch"></span>
+
+    </label>
+</div>
+</div>
+   
+  <!-- <button>
+  <a href="#" class="styleswitch" rel="stylesDark.css">Dark Mode</a>
+  </button>
+  <button class="button2">
+  <a href="#" class=" styleswitch " rel="styles.css">Light Mode</a>
+  </button> -->
   <div class="w3-container w3-center w3-mobile">
   <img src="images/TCAISsmall.png" class="w3-image" alt="Application Logo" title="Application Logo">
 </div>
@@ -30,18 +57,19 @@
   <p class="onScreen"><a href="https://cscctwitterclone.herokuapp.com/posts" target="_blank">Link To Functional Web Application!</a></p>
 </div>
 </div>
-	<div class="w3-container">
+	<class class="w3-container">
   <div class="home w3-mobile">
     <!-- use five whitespaces -->
     <p>‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎We all know that Twitter is one of the best social media platforms currently available for us to use. Users are able to follow other people, make new postings to the site in the form of "tweets", as well as "re-tweet" or repost another users posts. It is a very widely used platform with almost everyone you can think of having a personal account nowadays.<br /><br />
     ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎When myself and four others who are also participants in the Apprenticeship opportunity program at CSCC grouped up with the purpose of creating something we would be proud to show off to an interviewer, we brainstormed together for days. We wanted something that would not take many weeks to months in the conceptual stages, because the sooner our group project came to fruition, the better. After all, the main point of us grouping up was not to ship a good-looking project, realistically our purpose was, and still is, to show prospective companies that we can work as a team to create.<br /><br />
-    ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎We knew we wanted a web-app that has CRUD (Create, Read, Update, & Destroy) functionality, and has a persitent database where the server can be shut down, and when it is powered back on, any posts in the feed are still present, in order. After extensive research, we realized that a full-blown Twitter clone with user authentication and authorization and profiles and unique feeds would be far too time consuming, and unnecessary for what we are trying to accomplish. Plus, Twitter as we know it does not let a user Update or Edit a post once it is made. So, we decided on a blog style app that is responsive, and could be mistaken as a simple, restyled Twitter clone at a glance. And that is how the Twitter Clone Application was born.<br /><br />
+    ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎We knew we wanted a web-app that has <a href="how.html#scrollTo">CRUD (Create, Read, Update, & Destroy) functionality</a>, and has a persitent database where the server can be shut down, and when it is powered back on, any posts in the feed are still present, in order. After extensive research, we realized that a full-blown Twitter clone with user authentication and authorization and profiles and unique feeds would be far too time consuming, and unnecessary for what we are trying to accomplish. Plus, Twitter as we know it does not let a user Update or Edit a post once it is made. So, we decided on a blog style app that is responsive, and could be mistaken as a simple, restyled Twitter clone at a glance. And that is how the Twitter Clone Application was born.<br /><br />
     ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎<em>Sidenote, any mention of Twitter or any copyrighted name or technology throughout this website is purely at the discretion of the copyright owners to have removed from the site. The author of this site does not claim in any way to be affiliated with the companies.</em></p>
   </div>
-<hr />
+</div>
 </div>
 <div class="footer">
   <h4> © 2020 || Nikolas Ball </h4>
-	</div>
+  </div>
+  
 </body>
 </html>

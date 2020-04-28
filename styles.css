@@ -1,10 +1,9 @@
 /* Nikolas Ball */
 /* CSCI1145*/
-/* April 9th 2020 */
+/* April 27th 2020 */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* margin: 0; */
 }
 
 
@@ -52,20 +51,6 @@ div.desc {
   }
 }
 
-
-/* @media screen and (max-width: 767px) {
-  .tg {
-    width: auto !important;
-    }
-  .tg col {
-    width: auto !important;
-    }
-  .tg-wrap {
-    overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;
-    }
-  } */
-
-
 .header {
   padding: 80px; 
   text-align: center; 
@@ -90,32 +75,6 @@ div.desc {
 .header h1 {
   font-size: 40px;
 }
-
-
-/* .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; 
-    top: 0; 
-    width: 100%;
-  }
-  
-
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  } */
-
 
 * {
   box-sizing: border-box;
@@ -155,7 +114,7 @@ div.desc {
 
 .home {
   flex: 70%; 
-  background-color: white; 
+  /* background-color: white;  */
   padding: 20px; 
 }
 .about {
@@ -192,29 +151,30 @@ div.desc {
 
 .footer {
   padding: 10px;
-  text-align: center; 
-  background: #efefef;
+  text-align: center;
+  background-color: #efefef;
 }
+
 /*FORM INPUT STYLES*/
 /*==============================================================================================*/
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+/* input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
-}
+} */
 
 /* Style the label to display next to the inputs */
-label {
+/* label {
   padding: 12px 12px 12px 0;
   display: inline-block;
-}
+} */
 
 /* Style the submit button */
-input[type=submit] {
+/* input[type=submit] {
   background-color: #00acee;
   color: white;
   padding: 12px 20px;
@@ -222,10 +182,10 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
-}
+} */
 
 /* Style the submit button */
-input[type=submit]:hover {
+/* input[type=submit]:hover {
   background-color: #79d9ff;
   color: white;
   padding: 12px 20px;
@@ -233,24 +193,24 @@ input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
   float: right;
-}
+} */
 
 /* Style the container */
-.container {
+/* .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-}
+} */
 
 /* Floating column for labels: 25% width */
-.col-25 {
+/* .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
-}
+} */
 
 /* Floating column for inputs: 75% width */
-.col-75 {
+/* .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
@@ -258,14 +218,14 @@ input[type=submit]:hover {
 
 .col-75 textarea {
   height: 175px;
-}
+} */
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -273,4 +233,145 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+/* button {
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: black;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    border-radius: 500px;
+    padding: 15px;
+    min-width: 130px;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+.button2 {
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    border-radius: 500px;
+    padding: 15px;
+    min-width: 130px;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+button:focus {
+  outline:0;
+} */
+
+
+.onoffswitch {
+  margin: auto;
+  width: 50%;
+  position: relative;
+  width: 90px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content:"ON";
+  padding-left: 10px;
+  background-color: black;
+  color: white;
+}
+.onoffswitch-inner:after {
+  content:"OFF";
+  padding-right: 10px;
+  background-color: white;
+  color: black;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: black;
+  border: 2px solid gray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+  background-color: #FFFFFF;
+}
+#box1 {
+  color: black;
+  background-color: white;
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+}
+#canvas-wrapper {
+  color: black;
+  background-color: white;
+}
+#canvas-wrapper.dark-mode {
+  color: white;
+  background-color: black;
+}
+
+#canvas-wrapper.light-mode {
+  color: black;
+  background-color: white;
+}
+
+.superImportant .do-not-ignore {
+  margin: auto;
+  width: 50%;
 }

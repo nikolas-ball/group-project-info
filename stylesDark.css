@@ -1,0 +1,279 @@
+/* Nikolas Ball */
+/* CSCI1145*/
+/* April 27th 2020 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  #canvas-wrapper.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+  @media screen and (max-width: 400px) {
+     .onScreen a {
+      font-size: large !important;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .onScreen a {
+      font-size: x-large !important;
+    }
+  }
+  /* ========================================== gallery */
+  div.gallery {
+    border: 3px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 275px;
+  }
+  
+  div.desc {
+    padding: 15px;
+  }
+  
+  .responsive {
+    padding: 6px 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .header {
+    padding: 80px; 
+    text-align: center; 
+    background: #1DA1F2; 
+    color: white;
+  }
+  
+  .header img {
+      width: 400px;
+  }
+  
+  .header2 {
+    padding: 80px; 
+    text-align: center; 
+    background: #1DA1F2; 
+    color: white;
+  }
+  
+  .header2 img {
+      width: 800px;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    padding: 5px;
+  }
+  /*removal of inline styles for certain images*/
+  .column img {
+    width: 100%;
+    height: 275px;
+  }
+  
+  .row2 {
+    display: flex;
+    margin: 5px;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column2 {
+    flex: 25%;
+    border: 2px solid black;
+    margin: 5px;
+  }
+  /*removal of inline styles for certain images*/
+  .row2 .column2 img {
+    width: 100%;
+    height: 275px;
+  }
+  
+  .home {
+    flex: 70%; 
+    background-color: white; 
+    padding: 20px; 
+  }
+  .about {
+    flex: 70%; 
+    background-color: white; 
+    padding: 20px; 
+  }
+  .why {
+    flex: 70%; 
+    background-color: white; 
+    padding: 20px; 
+  }
+  .how {
+    flex: 70%; 
+    background-color: white; 
+    padding: 20px; 
+  }
+  .galleryy {
+    flex: 70%; 
+    background-color: white; 
+    padding: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 25px;
+  }
+  
+  .grid > * {
+    border: 4px solid black;
+  }
+  
+  .footer {
+    padding: 10px;
+    text-align: center; 
+    background: #efefef;
+  }
+  /*FORM INPUT STYLES*/
+  /*==============================================================================================*/
+  /* Style inputs, select elements and textareas */
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #00acee;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the submit button */
+  input[type=submit]:hover {
+    background-color: #79d9ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .col-75 textarea {
+    height: 175px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  button {
+      color: #fff;
+      cursor: pointer;
+      margin-bottom: 10px;
+      background-color: black;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border: 2px solid #fff;
+      border-radius: 500px;
+      padding: 15px;
+      min-width: 130px;
+  }
+  
+  button:hover {
+    background-color: transparent;
+  }
+  
+  .button2 {
+      color: black;
+      cursor: pointer;
+      margin-bottom: 10px;
+      background-color: white;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border: 2px solid #fff;
+      border-radius: 500px;
+      padding: 15px;
+      min-width: 130px;
+  }
+  
+  button:hover {
+    background-color: transparent;
+  }
+  
+  button:focus {
+    outline:0;
+  }
